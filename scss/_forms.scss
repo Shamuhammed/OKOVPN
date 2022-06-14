@@ -1,0 +1,89 @@
+//buttons
+.btn {
+   box-sizing: border-box;
+   display: inline-block;
+   height: 52px;
+   background-color: $_blue;
+   border-radius: 100px;
+
+   padding: 0 34px;
+   line-height: 52px;
+
+   position: relative;
+
+   font-weight: 700;
+   font-size: 16px;
+   color: $_white;
+   transition: all .3s ease;
+
+   @media (max-width: $md1) {
+      font-size: 15px;
+   }
+   @media (max-width: $md2) {
+      font-size: 14px;
+      line-height: 42px;
+      height: 42px;
+   }
+   @media (max-width: $md3) {
+      font-size: 13px;
+   }
+   @media (max-width: $md4) {
+      font-size: 12px;
+      padding: 0 19px;
+      font-weight: 600;
+   }   
+   @media (max-width: 369px) {
+      width: 100%;
+      text-align: center;
+   }
+   &:hover {
+      background: $_white;
+      border: 1px solid $_blue;
+      color: $_blue;
+   }
+
+   &__transparent {
+      color: $_blue;
+      border: 1px solid $_blue;
+      background: transparent;
+      &:hover {
+         color: $_white;
+         background: $_blue;
+      }
+   }
+   &:active {
+      background: $_blue;
+      color: $_white;
+   }
+   &.fw {}
+}
+//==================================================
+//input
+input[type=text], input[type=email], input[type=tel], textarea{-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.input {
+   border: 1px solid #000;
+   border-radius: 0 !important;
+   background-color: #f8f7f7;
+
+   display: block;
+   width: 100%;
+   height: 50px;
+   padding: 0 20px;
+
+   font-family: $ff1;
+   font-size: 14px;
+
+   position: relative;
+
+   &.focus{}
+   &.err{}
+}
+textarea.input {}
+//==================================================
+//form 
+.form {}
+.form-row{@include flexbox(); margin: 0px 0px;}
+.form__column{padding: 0 15px;}
+.form-input{}
+.form-button{}
+//==================================================
