@@ -153,3 +153,5 @@ window.addEventListener('scroll', function () {
    if (window.pageYOffset > height) up.classList.add('active');
    else up.classList.remove('active');
 });
+
+let num = 1;
